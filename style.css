@@ -376,41 +376,21 @@ transform: translateY(0);
 }
 }
 @media (max-width: 768px) {
-
   .hero{
       flex-direction: column;
       text-align: center;
   }
-  
-  .hero-img{
-      width: 100%;
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
-  
-  .cards{
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .card{
-      width: 90%;
-  }
-  
-  .skills-box{
-      flex-direction: column;
-  }
-  
-  .skill{
-      width: 80%;
-      margin-bottom: 20px;
-  }
-  
-  .navbar{
-      flex-direction: column;
-  }
-  
   .links a{
-      display: block;
-      margin: 10px 0;
+    font-size: 14px;
+    margin-left: 0;
   }
-  
+  .navbar{
+    padding: 15px;
   }
+}
