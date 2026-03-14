@@ -376,11 +376,12 @@ transform: translateY(0);
 }
 }
 @media (max-width: 768px) {
-  .hero{
-      flex-direction: column;
-      text-align: center;
-  }
+ .logo{
+  font-size: 18px;
+  font-weight: 600;
+ }
   .links{
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,4 +394,8 @@ transform: translateY(0);
   .navbar{
     padding: 15px;
   }
+  .hero{
+    flex-direction: column;
+    text-align: center;
+}
 }
