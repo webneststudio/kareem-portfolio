@@ -377,18 +377,17 @@ transform: translateY(0);
 }
 @media (max-width: 768px) {
  .logo{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
  }
   .links{
-    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   .links a{
-    font-size: 14px;
+    font-size: 10px;
     margin-left: 0;
   }
   .navbar{
