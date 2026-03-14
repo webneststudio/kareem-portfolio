@@ -370,6 +370,7 @@ footer {
   .navbar {
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
   }
 
   .logo {
@@ -389,6 +390,7 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
   }
 
   .hero-img img {
