@@ -1,0 +1,377 @@
+body {
+  background-color: #1d0347;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+}
+.navbar {
+  background: linear-gradient(90deg, #1b1f4b, #0b0f2a);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  position: relative;
+}
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background: #417ef0;
+  transition: 0.3s;
+}
+.links a:hover::after {
+  color: #417ef0;
+  width: 53px;
+}
+.logo {
+  color: #d8ceef;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.logo:hover {
+  filter: blur(1px);
+}
+section {
+  padding: 20px;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 70px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 1s ease;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+.hero h3 {
+  font-size: 20px;
+  color: #cbd5f5;
+  margin-bottom: 0;
+}
+.hero h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.hero p {
+  color: #94a3b8;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.buttons {
+  margin-top: 20px;
+}
+.btn1 {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-right: 10px;
+  /*لما اروح ع الزرار شكل الماوس يتغير لشكل يد*/
+  cursor: pointer;
+}
+.btn1:hover {
+  background: #4f46e5;
+}
+.btn2 {
+  background: transparent;
+  border: 1px solid #4f46e5;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn2:hover {
+  background: #4f46e5;
+}
+.hero-img {
+  width: 400px;
+  max-width: 100%;
+}
+.stars {
+  /*لعمل عنصر حر يتحط فوق الهيرو*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d03466b;
+  overflow: hidden;
+  z-index: -1;
+}
+.stars::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow: 200px 350px white, 250px 400px white, 300px 550px white,
+    450px 600px white, 400px 650px white, 600px 700px white;
+  animation: starsMove 20s linear infinite;
+}
+@keyframes starsMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1500px);
+  }
+}
+/*about*/
+.about {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeUp 1s ease;
+}
+.about img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #4f46e5;
+  padding: 5px;
+  box-shadow: 0 0 20px rgba(121, 79, 247, 0.6);
+  margin-bottom: 15px;
+}
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.about h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #4f46e5;
+  margin-top: 5px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.about p {
+  color: #ccc;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+  margin: auto;
+  line-height: 1.6;
+}
+.about a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 25px;
+  border: 2px solid #4f46e5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.about a:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 25px auto;
+  transition: 0.3s;
+}
+.line:hover {
+  width: 400px;
+}
+/*skills*/
+.skills {
+  text-align: center;
+  padding: 80px 20px;
+}
+.skills h2 {
+  font-size: 35px;
+}
+.skills-box {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.skill {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(145deg,#4807c0a6,#322357a4);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  transition: 0.3s;
+ align-items: center;
+ justify-content: center;
+ animation: fadeUp 1s ease;
+ 
+}
+.skill:nth-child(4) {
+  grid-column: 1 / 2;
+}
+.skill:nth-child(5) {
+  grid-column: 3 / 4;
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.fa-html5 {
+  color: #e34c26;
+}
+.fa-css3-alt {
+  color: #264de4;
+}
+.fa-js {
+  color: #f7df1e;
+}
+.fa-git-alt {
+  color: #f34f29;
+}
+.fa-github {
+  color: #ffffff;
+}
+.skill h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.skill p {
+  color: #9ca3af;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  border: 1px solid #784fff;
+}
+.projects {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeUp 1s ease;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: linear-gradient(145deg,#4807c0a6,#322357a4);
+  width: 260px;
+  /*اي حاجه تظهر بر الكارد يقصها ومتظهرش*/
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+text-align: center;
+transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+display: block;
+border-radius: 20px 20px 0 0;
+transition: 0.3s;
+}
+.view-btn {
+  background: #4f46e5;
+  color: #fff;
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*يعني الزرار مستخبي*/
+  opacity: 0;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.view-btn:hover {
+opacity: 1;
+}
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeUp 1s ease;
+}
+#contact {
+  font-size: 100px;
+}
+.contact h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.contact p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+.contact a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+.contact a:hover {
+  color: #6366f1;
+}
+.contact-box {
+  display: flex;
+justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+.contact-card {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 220px;
+}
+.contact-card a {
+color: #4f46e5;
+text-decoration: none;
+font-weight: 500;
+}
+.contact-card p {
+white-space: nowrap;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3;
+}
+footer {
+  background: #0206173c;
+  text-align: center;
+  padding: 20px;
+}
+@keyframes fadeUp {
+from{
+  opacity: 0;
+  transform: translateY(40px);
+}
+to{
+opacity: 1;
+transform: translateY(0);
+}
+}
